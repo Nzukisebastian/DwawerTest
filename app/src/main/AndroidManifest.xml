@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.dwawertest">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/student"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".activity.Full_Video"></activity>
+        <activity android:name=".KCSE.Client_Reports_Screen" />
+        <activity
+            android:name=".Mathematics.FormFourMathTopics.Form_Four_Math_Topics"
+            android:parentActivityName=".Mathematics.FormOneMathTopics.Form_One_Math_Topics" />
+        <activity
+            android:name=".Mathematics.FormThreeMathTopics.Form_Three_Math_Topics"
+            android:parentActivityName=".Mathematics.FormOneMathTopics.Form_One_Math_Topics" />
+        <activity
+            android:name=".Mathematics.FormTwoMathTopics.Form_Two_Math_Activity"
+            android:parentActivityName=".Mathematics.FormOneMathTopics.Form_One_Math_Topics" />
+        <activity
+            android:name=".Mathematics.Form_One_Full_Video"
+            android:parentActivityName=".Mathematics.FormOneMathTopics.Form_One_Math_Topics" />
+        <activity android:name=".RegisterLogin.ClientLogins">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.AboutUsActivity"
+            android:label="@string/activity_title_about_us" />
+        <activity
+            android:name=".activity.PrivacyPolicyActivity"
+            android:label="@string/activity_title_privacy_policy" />
+        <activity android:name=".RegisterLogin.ClientRegister" />
+        <activity android:name=".SubscribeScreen.Mpesa_Pay" />
+        <activity android:name=".SubjectCategories.GalleryActivity" />
+        <activity
+            android:name=".activity.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Mathematics.FormOneMathTopics.Form_One_Math_Topics" />
+        <activity android:name=".Mathematics.Form_One_Video_Urls" />
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/form_one_math_cardview"
+    android:layout_marginBottom="2dp"
+    app:cardElevation="0.5dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="70sp"
+            android:layout_height="70sp"
+            android:id="@+id/form_one_math_img_cover"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="title"
+            android:layout_gravity="center"
+            android:textSize="16sp"
+            android:textColor="#050505"
+            android:id="@+id/form_one_math_title"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:textColor="#000"
+            android:id="@+id/form_one_math_description"/>
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

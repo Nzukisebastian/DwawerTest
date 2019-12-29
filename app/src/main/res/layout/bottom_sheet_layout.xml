@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/RelativeLayoutSheet"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    app:layout_behavior="@string/bottom_sheet_behavior"
+    android:background="#ffffff"
+    app:behavior_hideable="true"
+    android:padding="20dp"
+    >
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:paddingRight="50dp"
+                android:paddingLeft="50dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    android:drawableTop="@drawable/bio"
+                    android:drawablePadding="6dp"
+                    android:gravity="left|center"
+                    android:height="60dp"
+                    android:padding="6dp"
+                    android:text="Video"
+                    android:id="@+id/bottom_sheet_video_btn"
+                    android:textAlignment="center"
+                    android:fontFamily="sans-serif-light"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:textColor="#666" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:paddingRight="50dp"
+                android:paddingLeft="50dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    android:drawableTop="@drawable/chem"
+                    android:drawablePadding="6dp"
+                    android:gravity="left|center"
+                    android:height="60dp"
+                    android:padding="6dp"
+                    android:text="Lesson"
+                    android:id="@+id/bottom_sheet_lesson_btn"
+                    android:textAlignment="center"
+                    android:fontFamily="sans-serif-light"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:textColor="#666" />
+
+            </LinearLayout>
+
+        </TableRow>
+
+    </TableLayout>
+</LinearLayout>
