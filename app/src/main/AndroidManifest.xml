@@ -46,7 +46,6 @@
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".Mathematics.FormOneMathTopics.Form_One_Math_Topics" />
-        <activity android:name=".Mathematics.Form_One_Video_Urls" />
         <activity android:name=".MainActivity" />
     </application>
 

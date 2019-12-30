@@ -10,6 +10,7 @@ import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -34,28 +35,32 @@ public class Client_Reports_Screen extends AppCompatActivity {
     RequestQueue mRequest;
     List<ReportModelList> mListitems;
     String email_id;
+    String title;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_client__reports__screen);
+        //receiving data
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         mRecyclerview=(RecyclerView)findViewById(R.id.report_recycler);
         mRequest= Volley.newRequestQueue(getApplicationContext());
         mListitems=new ArrayList<>();
-        request();
         mManager=new LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false);
         mRecyclerview.setLayoutManager(mManager);
         mAdapter=new ReportAdapterList(mListitems,Client_Reports_Screen.this);
         mRecyclerview.setAdapter(mAdapter);
+        Intent intent=getIntent();
+        title=intent.getExtras().getString("title");
+            request(title);
 
     }
 
-    private void request(){
+    private void request(String title){
 
         //email_id="nzuki2030@gmail.com";
-        final String url="http://mtaani-academy.co.ke/mtaani/getinfo.php";
-        JsonArrayRequest requestimage=new JsonArrayRequest(Request.Method.POST, url, null, new Response.Listener<JSONArray>() {
+        //final String url="http://mtaani-academy.co.ke/mtaani/getinfo.php";
+        JsonArrayRequest requestimage=new JsonArrayRequest(Request.Method.POST, title, null, new Response.Listener<JSONArray>() {
             @Override
             public void onResponse(JSONArray response) {
                 Log.d("JSONResponse",response.toString());
