@@ -45,10 +45,10 @@ public class Form_Two_Math_Activity extends AppCompatActivity {
         progressBar.setVisibility(View.VISIBLE);
         //mListitems=new ArrayList<>();
         // model.setTitle(data.getString("title"));
-        mListitems.add(new Form_Two_Math_Model("Algebraic expressions","",R.drawable.algebra1));
-        mListitems.add(new Form_Two_Math_Model("Angles and plane figures","", R.drawable.angle));
-        mListitems.add(new Form_Two_Math_Model("Area","",R.drawable.area));
-        mListitems.add(new Form_Two_Math_Model("Commercial arithmetic","",R.drawable.money));
+        mListitems.add(new Form_Two_Math_Model("Cubes and Cube Roots","",R.drawable.algebra1));
+        mListitems.add(new Form_Two_Math_Model("Reciprocals","", R.drawable.angle));
+        mListitems.add(new Form_Two_Math_Model("Indices and Logarithms","",R.drawable.area));
+        mListitems.add(new Form_Two_Math_Model("Equations and Straight Lines","",R.drawable.money));
         mListitems.add(new Form_Two_Math_Model("Common solids","",R.drawable.vol));
         mListitems.add(new Form_Two_Math_Model("Coordinates and graphs","",R.drawable.geometry));
         mListitems.add(new Form_Two_Math_Model("Decimals","",R.drawable.decimals));

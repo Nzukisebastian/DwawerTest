@@ -44,30 +44,16 @@ public class Form_Four_Math_Topics extends AppCompatActivity {
     progressBar.setVisibility(View.VISIBLE);
     //mListitems=new ArrayList<>();
     // model.setTitle(data.getString("title"));
-    mListitems.add(new Form_Four_Math_Model("Algebraic expressions","",R.drawable.algebra1));
-    mListitems.add(new Form_Four_Math_Model("Angles and plane figures","", R.drawable.angle));
-    mListitems.add(new Form_Four_Math_Model("Area","",R.drawable.area));
-    mListitems.add(new Form_Four_Math_Model("Commercial arithmetic","",R.drawable.money));
-    mListitems.add(new Form_Four_Math_Model("Common solids","",R.drawable.vol));
-    mListitems.add(new Form_Four_Math_Model("Coordinates and graphs","",R.drawable.geometry));
-    mListitems.add(new Form_Four_Math_Model("Decimals","",R.drawable.decimals));
-    mListitems.add(new Form_Four_Math_Model("Divisibility test","",R.drawable.divisible));
-    mListitems.add(new Form_Four_Math_Model("Factors","",R.drawable.factor));
-    mListitems.add(new Form_Four_Math_Model("Fractions","",R.drawable.fractions));
-    mListitems.add(new Form_Four_Math_Model("Geometric construction","",R.drawable.geometry));
-    mListitems.add(new Form_Four_Math_Model("Greatest common divisor","",R.drawable.gcd));
-    mListitems.add(new Form_Four_Math_Model("Integers","",R.drawable.integer));
-    mListitems.add(new Form_Four_Math_Model("Least common multiples","",R.drawable.gcd));
-    mListitems.add(new Form_Four_Math_Model("Length","",R.drawable.lengths));
-    mListitems.add(new Form_Four_Math_Model("Mass weight and density","",R.drawable.mass));
-    mListitems.add(new Form_Four_Math_Model("Natural numbers","",R.drawable.integer));
-    mListitems.add(new Form_Four_Math_Model("Rate, ratio, proportion and percentage","",R.drawable.ratio));
-    mListitems.add(new Form_Four_Math_Model("Scale drawing","",R.drawable.similar));
-    mListitems.add(new Form_Four_Math_Model("Squares and square roots","",R.drawable.root));
-    mListitems.add(new Form_Four_Math_Model("Time","",R.drawable.time));
-    mListitems.add(new Form_Four_Math_Model("Volume and capacity","",R.drawable.volu));
-    mListitems.add(new Form_Four_Math_Model("Linear equations","",R.drawable.linear));
-
+    mListitems.add(new Form_Four_Math_Model("Matrices and Transformations","",R.drawable.matrix));
+    mListitems.add(new Form_Four_Math_Model("Statistics","", R.drawable.statistics));
+    mListitems.add(new Form_Four_Math_Model("Loci","",R.drawable.loci));
+    mListitems.add(new Form_Four_Math_Model("Trigonometry","",R.drawable.trigonometric));
+    mListitems.add(new Form_Four_Math_Model("Three Dimensional Geometry","",R.drawable.three_dimension));
+    mListitems.add(new Form_Four_Math_Model("Longitudes and Latitudes","",R.drawable.loglat));
+    mListitems.add(new Form_Four_Math_Model("Linear Programming","",R.drawable.linearprog));
+    mListitems.add(new Form_Four_Math_Model("Differentiation","",R.drawable.differentiation));
+    mListitems.add(new Form_Four_Math_Model("Area Approximation","",R.drawable.area_approximation));
+    mListitems.add(new Form_Four_Math_Model("Integration","",R.drawable.integration));
 
     progressBar.setVisibility(View.GONE);
   }

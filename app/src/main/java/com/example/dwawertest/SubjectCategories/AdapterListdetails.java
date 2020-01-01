@@ -41,11 +41,9 @@ public class AdapterListdetails extends RecyclerView.Adapter<AdapterListdetails.
         holder.thubnail.setImageResource(mlist.getImg());
         holder.cardView.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
+            public void onClick(View v){
                 String subject=mlist.getTitle();
                 if(subject=="MATHEMATICS"){
-
-
                     modelBottomSheet=LayoutInflater.from(context).inflate(R.layout.math_education_level,null);
                     BottomSheetDialog dialog=new BottomSheetDialog(context);
                     dialog.setContentView(modelBottomSheet);

@@ -10,6 +10,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.dwawertest.KCSE.Client_Reports_Screen;
 import com.example.dwawertest.Mathematics.Form_One_Full_Video;
 import com.example.dwawertest.R;
 
@@ -38,8 +39,97 @@ public class Form_Three_Math_AdapterList extends RecyclerView.Adapter<Form_Three
     holder.cardView.setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View v) {
-        Intent i=new Intent(context, Form_One_Full_Video.class);
-        context.startActivity(i);
+        String title=mlist.getTitle();
+        if(title.equals("Quadratic Expressions")){
+          final String url="http://mtaani-academy.co.ke/mtaani/Math_form_three_work/form_three_Quadratic_Expressions.php";
+          Intent i=new Intent(context, Client_Reports_Screen.class);
+          i.putExtra("title",url);
+          context.startActivity(i);
+        }else if(title.equals("Approximation and Errors")){
+          final String url="http://mtaani-academy.co.ke/mtaani/Math_form_three_work/form_three_Approximation_and_Errors.php";
+          Intent i=new Intent(context, Client_Reports_Screen.class);
+          i.putExtra("title",url);
+          context.startActivity(i);
+        }
+        else if(title.equals("Trigonometry")){
+          final String url="http://mtaani-academy.co.ke/mtaani/Math_form_three_work/form_three_Trigonometry.php";
+          Intent i=new Intent(context, Client_Reports_Screen.class);
+          i.putExtra("title",url);
+          context.startActivity(i);
+        }
+        else if(title=="SURDS"){
+          final String url="http://mtaani-academy.co.ke/mtaani/Math_form_three_work/form_three_SURDS.php";
+          Intent i=new Intent(context, Client_Reports_Screen.class);
+          i.putExtra("title",url);
+          context.startActivity(i);
+        }
+        else if(title=="Further Logarithms"){
+          final String url="http://mtaani-academy.co.ke/mtaani/Math_form_three_work/form_three_Further_Logarithms.php";
+          Intent i=new Intent(context, Client_Reports_Screen.class);
+          i.putExtra("title",url);
+          context.startActivity(i);
+        }
+        else if(title=="Commercial Arithmetic"){
+          final String url="http://mtaani-academy.co.ke/mtaani/Math_form_three_work/form_three_Commercial_Arithmetic.php";
+          Intent i=new Intent(context, Client_Reports_Screen.class);
+          i.putExtra("title",url);
+          context.startActivity(i);
+        }
+        else if(title=="Circle Chords and tangents"){
+          final String url="http://mtaani-academy.co.ke/mtaani/Math_form_three_work/form_three_Circle_Chords_and_tangents.php";
+          Intent i=new Intent(context, Client_Reports_Screen.class);
+          i.putExtra("title",url);
+          context.startActivity(i);
+        }
+        else if(title=="Matrices"){
+          final String url="http://mtaani-academy.co.ke/mtaani/Math_form_three_work/form_three_Matrices.php";
+          Intent i=new Intent(context, Client_Reports_Screen.class);
+          i.putExtra("title",url);
+          context.startActivity(i);
+        }
+        else if(title=="Formulae and Variations"){
+          final String url="http://mtaani-academy.co.ke/mtaani/Math_form_three_work/form_three_Formulae_and_Variations.php";
+          Intent i=new Intent(context, Client_Reports_Screen.class);
+          i.putExtra("title",url);
+          context.startActivity(i);
+        }
+        else if(title=="Sequences and Series"){
+          final String url="http://mtaani-academy.co.ke/mtaani/Math_form_three_work/form_three_Sequences_and_Series.php";
+          Intent i=new Intent(context, Client_Reports_Screen.class);
+          i.putExtra("title",url);
+          context.startActivity(i);
+        }
+        else if(title=="Vectors"){
+          final String url="http://mtaani-academy.co.ke/mtaani/Math_form_three_work/form_three_Vectors.php";
+          Intent i=new Intent(context, Client_Reports_Screen.class);
+          i.putExtra("title",url);
+          context.startActivity(i);
+        }
+        else if(title=="Binomial Expansions"){
+          final String url="http://mtaani-academy.co.ke/mtaani/Math_form_three_work/form_three_Binomial_Expansions.php";
+          Intent i=new Intent(context, Client_Reports_Screen.class);
+          i.putExtra("title",url);
+          context.startActivity(i);
+        }
+        else if(title=="Probability"){
+          final String url="http://mtaani-academy.co.ke/mtaani/Math_form_three_work/form_three_Probability.php";
+          Intent i=new Intent(context, Client_Reports_Screen.class);
+          i.putExtra("title",url);
+          context.startActivity(i);
+        }
+        else if(title=="Compound Proportions and Rates of Work"){
+          final String url="http://mtaani-academy.co.ke/mtaani/Math_form_three_work/form_three_Compound_Proportions_and_Rates_of_Work.php";
+          Intent i=new Intent(context, Client_Reports_Screen.class);
+          i.putExtra("title",url);
+          context.startActivity(i);
+        }
+        else if(title=="Graphical Methods"){
+          final String url="http://mtaani-academy.co.ke/mtaani/Math_form_three_work/form_three_Graphical_Methods.php";
+          Intent i=new Intent(context, Client_Reports_Screen.class);
+          i.putExtra("title",url);
+          context.startActivity(i);
+        }
+
       }
     });
   }

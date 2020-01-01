@@ -11,7 +11,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".activity.Full_Video"></activity>
+        <activity android:name=".Mathematics.KCSE_REVISION_MATHS.Math_Activity"></activity>
+        <activity android:name=".activity.Full_Video" />
         <activity android:name=".KCSE.Client_Reports_Screen" />
         <activity
             android:name=".Mathematics.FormFourMathTopics.Form_Four_Math_Topics"

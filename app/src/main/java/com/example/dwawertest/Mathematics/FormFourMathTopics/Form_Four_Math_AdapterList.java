@@ -10,6 +10,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.dwawertest.KCSE.Client_Reports_Screen;
 import com.example.dwawertest.Mathematics.Form_One_Full_Video;
 import com.example.dwawertest.R;
 
@@ -39,8 +40,67 @@ public class Form_Four_Math_AdapterList  extends RecyclerView.Adapter<Form_Four_
     holder.cardView.setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View v) {
-        Intent i=new Intent(context, Form_One_Full_Video.class);
-        context.startActivity(i);
+        String title=mlist.getTitle();
+        if(title.equals("Matrices and Transformations")){
+          final String url="http://mtaani-academy.co.ke/mtaani/form_four_Matrices_and_Transformations.php";
+          Intent i=new Intent(context, Client_Reports_Screen.class);
+         i.putExtra("title",url);
+          context.startActivity(i);
+        }else if(title.equals("Statistics")){
+          final String url="http://mtaani-academy.co.ke/mtaani/form_four_Statistics.php";
+          Intent i=new Intent(context, Client_Reports_Screen.class);
+          i.putExtra("title",url);
+          context.startActivity(i);
+        }
+        else if(title.equals("Loci")){
+          final String url="http://mtaani-academy.co.ke/mtaani/form_four_Loci.php";
+          Intent i=new Intent(context, Client_Reports_Screen.class);
+          i.putExtra("title",url);
+          context.startActivity(i);
+        }
+        else if(title=="Trigonometry"){
+          final String url="http://mtaani-academy.co.ke/mtaani/form_four_Trigonometry.php";
+          Intent i=new Intent(context, Client_Reports_Screen.class);
+          i.putExtra("title",url);
+          context.startActivity(i);
+        }
+        else if(title=="Three Dimensional Geometry"){
+          final String url="http://mtaani-academy.co.ke/mtaani/form_four_Three_Dimensional_Geometry.php";
+          Intent i=new Intent(context, Client_Reports_Screen.class);
+          i.putExtra("title",url);
+          context.startActivity(i);
+        }
+        else if(title=="Longitudes and Latitudes"){
+          final String url="http://mtaani-academy.co.ke/mtaani/form_four_Longitudes%20and%20Latitudes.php";
+          Intent i=new Intent(context, Client_Reports_Screen.class);
+          i.putExtra("title",url);
+          context.startActivity(i);
+        }
+        else if(title=="Linear Programming"){
+          final String url="http://mtaani-academy.co.ke/mtaani/form_four_Linear%20Programming.php";
+          Intent i=new Intent(context, Client_Reports_Screen.class);
+          i.putExtra("title",url);
+          context.startActivity(i);
+        }
+        else if(title=="Differentiation"){
+          final String url="http://mtaani-academy.co.ke/mtaani/form_four_differentiation.php";
+          Intent i=new Intent(context, Client_Reports_Screen.class);
+          i.putExtra("title",url);
+          context.startActivity(i);
+        }
+        else if(title=="Area Approximation"){
+          final String url="http://mtaani-academy.co.ke/mtaani/form_four_Area%20Approximation.php";
+          Intent i=new Intent(context, Client_Reports_Screen.class);
+          i.putExtra("title",url);
+          context.startActivity(i);
+        }
+        else if(title=="Integration"){
+          final String url="http://mtaani-academy.co.ke/mtaani/form_four_Integration.php";
+          Intent i=new Intent(context, Client_Reports_Screen.class);
+          i.putExtra("title",url);
+          context.startActivity(i);
+        }
+
       }
     });
   }

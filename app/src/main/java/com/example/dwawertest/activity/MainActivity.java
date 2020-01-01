@@ -23,12 +23,11 @@ import android.widget.Toast;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.example.dwawertest.R;
-import com.example.dwawertest.RegisterLogin.ClientLogins;
+import com.example.dwawertest.fragment.Kcpe_Revision_Fragment;
 import com.example.dwawertest.fragment.NotificationsFragment;
 import com.example.dwawertest.other.CircleTransform;
 import com.example.dwawertest.fragment.HomeFragment;
-import com.example.dwawertest.fragment.MoviesFragment;
-import com.example.dwawertest.fragment.PhotosFragment;
+import com.example.dwawertest.fragment.Set_Books_Fragment;
 import com.example.dwawertest.fragment.SettingsFragment;
 
 public class MainActivity extends AppCompatActivity {
@@ -116,8 +115,8 @@ public class MainActivity extends AppCompatActivity {
    */
   private void loadNavHeader() {
     // name, website
-    txtName.setText("Ravi Tamada");
-    txtWebsite.setText("www.androidhive.info");
+    txtName.setText("Mtaani Academy");
+    txtWebsite.setText("www.mtaani-academy.co.ke");
 
     // loading header background image
     Glide.with(this).load(urlNavHeaderBg)
@@ -198,12 +197,12 @@ public class MainActivity extends AppCompatActivity {
         return homeFragment;
       case 1:
         // photos
-        PhotosFragment photosFragment = new PhotosFragment();
-        return photosFragment;
+        Kcpe_Revision_Fragment kcpe_Revision_Fragment = new Kcpe_Revision_Fragment();
+        return kcpe_Revision_Fragment;
       case 2:
         // movies fragment
-        MoviesFragment moviesFragment = new MoviesFragment();
-        return moviesFragment;
+        Set_Books_Fragment set_Books_Fragment = new Set_Books_Fragment();
+        return set_Books_Fragment;
       case 3:
         // notifications fragment
         NotificationsFragment notificationsFragment = new NotificationsFragment();
