@@ -16,7 +16,7 @@ import com.example.dwawertest.R;
 public class Mpesa_Pay extends AppCompatActivity{
   EditText phones,amounts;
   Button etsubscribe;
-  String emails;
+  String emails;//
   Context context;
 
   @Override
