@@ -6,14 +6,30 @@
     android:layout_height="match_parent"
     android:paddingLeft="5dp"
     android:paddingRight="5dp"
-    android:background="#3B5998"
     tools:context=".SubscribeScreen.Mpesa_Pay">
 
+  <LinearLayout
+      android:orientation="vertical"
+      android:background="@drawable/background_gradient"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
     <LinearLayout
         android:orientation="vertical"
-        android:background="@drawable/background_gradient"
+        android:background="@drawable/background_white"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content">
+    </LinearLayout>
+
+    <VideoView
+        android:id="@+id/videoView1"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_gravity="center"/>
 
     <LinearLayout
         android:orientation="vertical"
@@ -24,132 +40,111 @@
         android:layout_height="wrap_content">
 
 
-    <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="15dp"
-            android:layout_marginLeft="15dp"
-            android:text="Hello, Subscribe now to access comprehesive videos touching all topics and well revised KCSE papers after each topic and predicted 2019 KCSE questions.  "
-            android:layout_gravity="center"
-            android:id="@+id/textView7sx"
-            android:textColor="#0C0C0C"
-            android:textSize="12sp" />
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginRight="15dp"
+          android:layout_marginLeft="15dp"
+          android:text="Enhancing Academic Excellence and Strengthening Areas of Weakness"
+          android:layout_gravity="center"
+          android:id="@+id/textView7s"
+          android:textColor="#0C0C0C"
+          android:textSize="12sp" />
     </LinearLayout>
-
-        <VideoView
-            android:id="@+id/videoView1"
-            android:layout_width="match_parent"
-            android:layout_height="250dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginLeft="10dp"
-            android:layout_gravity="center"/>
 
     <LinearLayout
-        android:orientation="vertical"
-        android:background="@drawable/background_white"
-        android:layout_width="match_parent"
-        android:layout_marginRight="10dp"
-        android:layout_marginLeft="10dp"
-        android:layout_height="wrap_content">
-
-
-    <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="15dp"
-            android:layout_marginLeft="15dp"
-            android:text="MwalimuApp Empowering students by strengthening their Areas of weaknesses"
-            android:layout_gravity="center"
-            android:id="@+id/textView7s"
-            android:textColor="#0C0C0C"
-            android:textSize="12sp" />
-    </LinearLayout>
-
-        <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
         android:layout_marginTop="45sp"
         android:layout_marginRight="10dp"
-        android:layout_marginLeft="10dp"
         android:layout_marginBottom="15dp"
         android:background="@drawable/background_white"
         android:orientation="vertical">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Subscription Methods. Use either method 1 or method 2"
-                android:layout_gravity="center"
-                android:id="@+id/textView7x"
-                android:textColor="#070707"
-                android:textSize="12sp" />
+      <TextView
+          android:id="@+id/textView7x"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:text="Ksh 99 Only Weekly Subscription"
+          android:textColor="#070707"
+          android:textSize="12sp" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Ksh 50 Only Weekly Subscription"
-            android:layout_gravity="center"
-            android:id="@+id/textView7"
-            android:textColor="#070707"
-            android:textSize="12sp" />
+      <ImageView
+          android:id="@+id/imageVIew"
+          android:layout_width="80sp"
+          android:layout_height="80sp"
+          android:layout_gravity="center"
+          android:background="@drawable/background_white"
+          android:src="@drawable/mpesa" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="METHOD 1"
-                android:layout_gravity="center"
-                android:id="@+id/textView7xz"
-                android:textColor="#070707"
-                android:textSize="12sp" />
+      <TextView
+          android:id="@+id/texCtView7d"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="left"
+          android:layout_marginLeft="5dp"
+          android:layout_marginRight="5dp"
+          android:text="1.Select LIPA na M-PESA from M-Pesa Menu "
+          android:textColor="#070707"
+          android:textSize="12sp" />
 
-        <ImageView
-            android:id="@+id/imageVIew"
-            android:layout_gravity="center"
-            android:src="@drawable/mpesa"
-            android:background="@drawable/background_white"
-            android:layout_width="80sp"
-            android:layout_height="80sp" />
+      <TextView
+          android:id="@+id/textVSiew7d"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="left"
+          android:layout_marginLeft="5dp"
+          android:layout_marginRight="5dp"
+          android:text="2. SELECT PAYBILL- 997371 "
+          android:textColor="#070707"
+          android:textSize="12sp" />
 
-        <!-- phone Label -->
-        <android.support.design.widget.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <EditText android:id="@+id/etphone"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="15dp"
-                android:layout_marginLeft="15dp"
-                android:inputType="phone"
-                android:hint="254700xxxx20"
-                android:textStyle="bold" />
-        </android.support.design.widget.TextInputLayout>
+      <TextView
+          android:id="@+id/textAView7dS"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="left"
+          android:layout_marginLeft="5dp"
+          android:layout_marginRight="5dp"
+          android:text="3. ACCOUNT NUMBER- Enter your mobile number"
+          android:textColor="#070707"
+          android:textSize="12sp" />
 
-        <!-- Amount Label -->
-        <android.support.design.widget.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+      <TextView
+          android:id="@+id/textAVWizew7dS"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="left"
+          android:layout_marginLeft="5dp"
+          android:layout_marginRight="5dp"
+          android:text="Upon successful payment, you will receive a confirmation message. Our support team will approve your account within 5 minutes."
+          android:textColor="#070707"
+          android:textSize="12sp" />
 
-            <EditText
-                android:id="@+id/etamount"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="15dp"
-                android:layout_marginLeft="15dp"
-                android:hint="Amount"
-                android:inputType="number"
-                android:textSize="16sp" />
-        </android.support.design.widget.TextInputLayout>
+      <TextView
+          android:id="@+id/textView7g"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:text="OR"
+          android:textColor="#070707"
+          android:textSize="20sp"
+          android:textStyle="bold" />
 
-        <android.support.v7.widget.AppCompatButton
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="15dp"
-            android:layout_marginLeft="15dp"
-            android:textColor="#0B6623"
-            android:id="@+id/btn_subscribe"
-            android:text="Subscribe"
-            android:textSize="16sp"
-            android:layout_gravity="center" />
+      <Button
+          android:id="@+id/btn_subscribe"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:layout_marginLeft="15dp"
+          android:layout_marginRight="15dp"
+          android:background="@drawable/rec_gradient_fb"
+          android:text="Click to Subscribe 99 KSH"
+          android:textColor="#0B6623"
+          android:textSize="16sp" />
+
     </LinearLayout>
 
     <LinearLayout
@@ -162,100 +157,7 @@
         android:background="@drawable/background_white"
         android:orientation="vertical">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="METHOD 2"
-            android:layout_gravity="center"
-            android:id="@+id/textView7g"
-            android:textColor="#070707"
-            android:textSize="12sp" />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="15dp"
-            android:layout_marginLeft="15dp"
-            android:text="1. GO TO SIM TOOLKIT AND SELECT M-PESA"
-            android:id="@+id/textView7gaD"
-            android:textColor="#070707"
-            android:textSize="12sp" />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="15dp"
-            android:layout_marginLeft="15dp"
-            android:text="2. SELECT LIPA NA M-PESA"
-            android:id="@+id/textView7gaS"
-            android:textColor="#070707"
-            android:textSize="12sp" />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="15dp"
-            android:layout_marginLeft="15dp"
-            android:text="3. SELECT PAYBILL"
-            android:id="@+id/textView7gav"
-            android:textColor="#070707"
-            android:textSize="12sp" />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="15dp"
-            android:layout_marginLeft="15dp"
-            android:text="4. SELECT BUSINESS NUMBER AND ENTER- 247247"
-            android:id="@+id/textView7gaa"
-            android:textColor="#070707"
-            android:textSize="12sp" />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="15dp"
-            android:layout_marginLeft="15dp"
-            android:text="5. ENTER ACCOUNT NUMBER-YOUR MOBILE NUMBER"
-            android:id="@+id/textView7gah"
-            android:textColor="#070707"
-            android:textSize="12sp" />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="15dp"
-            android:layout_marginLeft="15dp"
-            android:text="6. ENTER AMOUNT-50"
-            android:id="@+id/textView7gaz"
-            android:textColor="#070707"
-            android:textSize="12sp" />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="15dp"
-            android:layout_marginLeft="15dp"
-            android:text="7. ENTER M-PESA PIN"
-
-            android:id="@+id/textView7gae"
-            android:textColor="#070707"
-            android:textSize="12sp" />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="15dp"
-            android:layout_marginLeft="15dp"
-            android:text="8. PRESS OKAY"
-            android:id="@+id/textView7ga"
-            android:textColor="#070707"
-            android:textSize="12sp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="15dp"
-            android:layout_marginLeft="15dp"
-            android:text="Upon successful payment, your subscription status will be active within 10 minutes"
-            android:id="@+id/textView7gas"
-            android:textColor="#070707"
-            android:textSize="12sp" />
-
-
     </LinearLayout>
 
-    </LinearLayout>
+  </LinearLayout>
 </android.support.v4.widget.NestedScrollView>

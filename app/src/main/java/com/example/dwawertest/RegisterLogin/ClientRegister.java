@@ -50,14 +50,14 @@ public class ClientRegister extends AppCompatActivity implements View.OnClickLis
 
         //first validate the form then move ahead
         //if this becomes true that means validation is successfull
-            String email=etemail.getText().toString().trim().toLowerCase();
-            String password=etpassword.getText().toString().trim().toLowerCase();
-            String fullname=etfullname.getText().toString().trim().toLowerCase();
-            String phone=etphone.getText().toString().trim().toLowerCase();
-            String type="register";
-            Backgroundtask backgroundtask=new Backgroundtask(this);
-            backgroundtask.execute(type,email,password,phone,fullname);
-            emptyInputEditText();
+        String email=etemail.getText().toString().trim().toLowerCase();
+        String password=etpassword.getText().toString().trim().toLowerCase();
+        String fullname=etfullname.getText().toString().trim().toLowerCase();
+        String phone=etphone.getText().toString().trim().toLowerCase();
+        String type="register";
+        Backgroundtask backgroundtask=new Backgroundtask(this);
+        backgroundtask.execute(type,email,password,phone,fullname);
+        emptyInputEditText();
 
     }
 

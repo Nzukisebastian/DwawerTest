@@ -16,6 +16,7 @@ import com.example.dwawertest.Mathematics.FormFourMathTopics.Form_Four_Math_Topi
 import com.example.dwawertest.Mathematics.FormOneMathTopics.Form_One_Math_Topics;
 import com.example.dwawertest.Mathematics.FormThreeMathTopics.Form_Three_Math_Topics;
 import com.example.dwawertest.Mathematics.FormTwoMathTopics.Form_Two_Math_Activity;
+import com.example.dwawertest.Mathematics.KCSE_REVISION_MATHS.Math_Kcse_Activity;
 import com.example.dwawertest.R;
 
 import java.util.List;
@@ -45,7 +46,7 @@ public class Kcse_Revision_AdapterList extends RecyclerView.Adapter<Kcse_Revisio
             public void onClick(View v){
                 String subject=mlist.getTitle();
                 if(subject=="MATHEMATICS"){
-                    Intent i=new Intent(context, Form_Two_Math_Activity.class);
+                    Intent i=new Intent(context, Math_Kcse_Activity.class);
                     context.startActivity(i);
                     }
 

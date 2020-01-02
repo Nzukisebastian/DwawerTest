@@ -1,29 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".KCSE.Client_Reports_Screen">
+    tools:context=".Mathematics.KCSE_REVISION_MATHS.Math_Kcse_Activity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingLeft="10dp"
-        android:paddingRight="10dp"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:padding="10dp">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="Revision Questions"
-            android:textSize="20sp"
-            android:textColor="#2e5894"
-            android:id="@+id/profile"/>
+            android:textColor="#FD0303"
+            android:text="KCSE REVISION MATHEMATICS"/>
 
         <android.support.v7.widget.RecyclerView
-            android:id="@+id/report_recycler"
+            android:id="@+id/kcse_math_recycler"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginRight="5dp"
@@ -31,6 +28,11 @@
             android:scrollbars="vertical">
         </android.support.v7.widget.RecyclerView>
 
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/kcse_math_pb"
+            android:visibility="gone" />
     </LinearLayout>
 
-</RelativeLayout>
+</LinearLayout>
